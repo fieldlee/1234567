@@ -16,6 +16,14 @@ class ProductInfoViewController: UIViewController {
     var headerInfoView : ProductInfoView?
     var navBar : ProductNavigationBar?
     let impressArr = [["name":"2017年 De Peng Li.","level":"best"],["name":"All rights reserved","level":"best"],["name":"dlkdkdkd","level":"best"],["name":"qwqwqw","level":"best"],["name":"ddddd","level":"best"],["name":"cccccc","level":"best"],["name":"sdsdasdfasdfadsfdf","level":"best"],["name":"ffffff","level":"best"],["name":"ggggg","level":"best"],["name":"hhhh","level":"best"],["name":"bb","level":"best"]]
+    let configArr = [["name":"配置","icon":"gamecenter"],["name":"口碑","icon":"game_selected"],["name":"论坛","icon":"gamecenter"],["name":"详解","icon":"game_selected"],["name":"经销商","icon":"best"],["name":"咨询","icon":"game_selected"]]
+    
+    @IBOutlet weak var askBtn: UIButton!
+    
+    @IBAction func askClick(_ sender: Any) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 //        add Nav Bar
@@ -35,6 +43,8 @@ class ProductInfoViewController: UIViewController {
         table.dataSource = self
         table.delegate = self
         table.tableFooterView = UIView()
+        table.backgroundColor = borderColor
+        
         
         let headRect = CGRect(x: 0, y: 0, width: view.bounds.size.width, height: 200.0)
         let headerView = UIView(frame:headRect )
@@ -51,6 +61,9 @@ class ProductInfoViewController: UIViewController {
         table.tableHeaderView = headerView
 
         
+        askBtn.backgroundColor = mainColor
+        askBtn.layer.cornerRadius = 5.0
+        askBtn.layer.masksToBounds = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -64,6 +77,10 @@ class ProductInfoViewController: UIViewController {
     }
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
+        
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
         self.navigationController?.navigationBar.isHidden = false
     }
     /*
@@ -129,7 +146,7 @@ extension ProductInfoViewController : UITableViewDataSource
         if section == 0 {
             return 1
         }
-        return 15
+        return configArr.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell : UITableViewCell?
@@ -141,6 +158,11 @@ extension ProductInfoViewController : UITableViewDataSource
             
         }else{
             cell = tableView.dequeueReusableCell(withIdentifier: "formulaCell", for: indexPath)
+            let configdic = configArr[indexPath.row]
+            let iconImage = cell?.viewWithTag(1) as! UIImageView
+            let textLab = cell?.viewWithTag(2) as! UILabel
+            iconImage.image = UIImage(named: configdic["icon"]!)
+            textLab.text = configdic["name"]
         }
         return cell!
     }

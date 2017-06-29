@@ -1,26 +1,31 @@
 //
-//  BrandTableViewController.swift
+//  AskTableViewController.swift
 //  1234567
 //
-//  Created by De Peng Li on 2017/6/23.
+//  Created by De Peng Li on 2017/6/29.
 //  Copyright © 2017年 De Peng Li. All rights reserved.
 //
 
 import UIKit
 
-class BrandTableViewController: UITableViewController {
-
+class AskTableViewController: UITableViewController {
+    var productName : String?
+    var productField : UITextField?
+    var placeField: UITextField?
+    var nameField:UITextField?
+    var teleField:UITextField?
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "在售产品"
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        self.title = "\(productName) 询价"
+        self.tableView.tableFooterView = UIView()
         self.tableView.backgroundColor = borderColor
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = false
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -30,49 +35,64 @@ class BrandTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 2
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        if section == 0 {
-            return 1
-        }else{
-            return 10
-        }
+        return 5
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell : UITableViewCell?
-        if indexPath.section == 0 {
-            cell = tableView.dequeueReusableCell(withIdentifier: "brandInfoCell", for: indexPath)
-        }
-        else{
+        if indexPath.row == 0 {
             cell = tableView.dequeueReusableCell(withIdentifier: "productCell", for: indexPath)
+            productField = (cell?.viewWithTag(1) as! UITextField)
+            productField?.delegate = self
+        }else if indexPath.row == 1 {
+            cell = tableView.dequeueReusableCell(withIdentifier: "placeCell", for: indexPath)
+            placeField = cell?.viewWithTag(1) as? UITextField
+            placeField?.delegate = self
+        }else if indexPath.row == 2 {
+            cell = tableView.dequeueReusableCell(withIdentifier: "nameCell", for: indexPath)
+            nameField = cell?.viewWithTag(1) as? UITextField
+            nameField?.delegate = self
+        }else if indexPath.row == 3 {
+            cell = tableView.dequeueReusableCell(withIdentifier: "teleCell", for: indexPath)
+            teleField = cell?.viewWithTag(1) as? UITextField
+            teleField?.delegate = self
+        }else if indexPath.row == 4 {
+            cell = tableView.dequeueReusableCell(withIdentifier: "submitCell", for: indexPath)
+            let submitBtn = cell?.viewWithTag(1) as! UIButton
+            submitBtn.backgroundColor = mainColor
+            submitBtn.layer.cornerRadius = 5.0
+            submitBtn.layer.masksToBounds = true
+            submitBtn.addTarget(self, action: #selector(AskTableViewController.submit), for: .touchUpInside)
         }
+        
+
+        // Configure the cell...
+
         return cell!
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath.section == 0 {
-            return 60.0
-        }else{
-            return 70.0
-        }
+        return 60.0
     }
-
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if section == 1 {
-            return "A系列"
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath)
+        cell?.setSelected(false, animated: false)
+        if indexPath.row == 2 {
+            nameField?.becomeFirstResponder()
         }
-        return ""
-    }
-    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        if section == 1 {
-            return 25.0
+        if indexPath.row == 3 {
+            teleField?.becomeFirstResponder()
         }
-        return 0.0
+        if indexPath.row == 4 {
+            submit()
+        }
     }
     /*
     // Override to support conditional editing of the table view.
@@ -109,24 +129,30 @@ class BrandTableViewController: UITableViewController {
     }
     */
 
-    
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        if segue.identifier == "PushBrandInfo" {
-            if let tmpView = segue.destination as? BrandInfoViewController {
-                tmpView.titleName = "斯坦威"
-            }
-        }
-        if segue.identifier == "productDetailCell" {
-            if let tmpView = segue.destination as? BrandInfoViewController {
-               
-            }
-        }
     }
- 
+    */
 
+    func submit() {
+        
+    }
+}
+extension AskTableViewController : UITextFieldDelegate
+{
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool
+    {
+        if textField == productField {
+            return false
+        }
+        if textField == placeField {
+            return false
+        }
+        return true
+    }
 }

@@ -9,11 +9,11 @@
 import UIKit
 
 class homeViewController: UIViewController {
-    lazy var preLanuchTime : String? = {
-        let defaults = UserDefaults.standard
-        let token = defaults.value(forKey: Key_Lanuch_Time) as! String?
-        return token
-    }()
+//    lazy var preLanuchTime : String? = {
+//        let defaults = UserDefaults.standard
+//        let token = defaults.value(forKey: Key_Lanuch_Time) as! String?
+//        return token
+//    }()
 
     @IBOutlet weak var AddBtnItem: UIBarButtonItem!
     @IBOutlet weak var HomeTable: UITableView!
@@ -25,6 +25,9 @@ class homeViewController: UIViewController {
         super.viewDidLoad()
         HomeTable.delegate = self
         HomeTable.dataSource = self
+        HomeTable.tableFooterView = UIView()
+        HomeTable.backgroundColor = borderColor
+        
         // Do any additional setup after loading the view.
         headCollectionLayout = UICollectionViewFlowLayout()
         headCollectionLayout?.scrollDirection = .horizontal
@@ -38,22 +41,19 @@ class homeViewController: UIViewController {
         headCollectionView?.delegate = self
         headCollectionView?.isPagingEnabled = true
         headCollectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: headCollectionIdentifier)
-        headCollectionView?.backgroundColor = UIColor.white
+        headCollectionView?.backgroundColor = borderColor
         
         let headControlFrame = CGRect(x: 80.0, y: 200.0 - 50.0, width: view.bounds.size.width - 160.0, height: 30.0)
         headControl = UIPageControl(frame: headControlFrame)
-        
-        
-        
     }
 
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         let dateTimeInterval = NSDate().timeIntervalSince1970
+        let defaults = UserDefaults.standard
+        let preLanuchTime = defaults.value(forKey: Key_Lanuch_Time) as! String?
         if let preTime = preLanuchTime {
-            print(preLanuchTime)
-            print((dateTimeInterval - NSNumber(value: preTime.floatValue).doubleValue))
             if (dateTimeInterval - NSNumber(value: preTime.floatValue).doubleValue) >= 60 * 60 * 24{
                 presentLanuchView()
             }

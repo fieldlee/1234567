@@ -14,6 +14,8 @@ class ForumTableViewController: UITableViewController {
     let headCollectionIdentifier = "actionReuseId"
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.tableFooterView = UIView()
+        tableView.backgroundColor = borderColor
         
         headCollectionLayout = UICollectionViewFlowLayout()
         headCollectionLayout?.scrollDirection = .horizontal

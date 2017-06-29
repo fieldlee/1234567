@@ -19,6 +19,8 @@ class FindTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.tableView.backgroundColor = borderColor
+        
         // Do any additional setup after loading the view.
         masterProductsCollectionFlowLayout = UICollectionViewFlowLayout()
         masterProductsCollectionFlowLayout?.scrollDirection = .vertical

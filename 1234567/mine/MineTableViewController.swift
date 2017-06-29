@@ -14,6 +14,7 @@ class MineTableViewController: UITableViewController {
         super.viewDidLoad()
         title = "我的"
         self.tableView.tableFooterView = UIView()
+        tableView.backgroundColor = borderColor
     }
 
     override func didReceiveMemoryWarning() {

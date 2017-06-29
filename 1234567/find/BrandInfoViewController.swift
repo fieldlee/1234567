@@ -26,7 +26,7 @@ class BrandInfoViewController: UIViewController {
         
         infoTableView.delegate = self
         infoTableView.dataSource = self
-
+        infoTableView.backgroundColor = borderColor
         infoTableView.tableFooterView = UIView()
         
         tempTextView.frame =  CGRect(x: 0, y: 0, width: view.bounds.size.width - 40.0 , height: 999.0)
@@ -58,6 +58,10 @@ class BrandInfoViewController: UIViewController {
     }
     
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = false
+    }
     /*
     // MARK: - Navigation
 
