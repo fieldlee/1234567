@@ -450,7 +450,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m7Y-Z2-qWg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3529" y="-120"/>
+            <point key="canvasLocation" x="2670" y="-349"/>
         </scene>
         <!--论坛-->
         <scene sceneID="cip-IT-WmK">
@@ -708,13 +708,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ffe-Wf-bma">
-                                <rect key="frame" x="0.0" y="64" width="375" height="561"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F5L-RB-Gx5">
                                 <rect key="frame" x="0.0" y="627" width="375" height="40"/>
                                 <subviews>
@@ -725,6 +718,9 @@
                                             <constraint firstAttribute="height" constant="30" id="xvU-Gt-JTd"/>
                                         </constraints>
                                         <state key="normal" title="发表评论..."/>
+                                        <connections>
+                                            <action selector="comment:" destination="OsW-2C-8RS" eventType="touchUpInside" id="lX2-tQ-1dr"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l5D-28-2OM">
                                         <rect key="frame" x="254" y="5" width="46" height="30"/>
@@ -740,9 +736,19 @@
                                         </constraints>
                                         <state key="normal" title="分享"/>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDx-J5-WkK">
+                                        <rect key="frame" x="191" y="5" width="46" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="8xF-rf-rtn"/>
+                                            <constraint firstAttribute="width" constant="46" id="qqp-aR-vNE"/>
+                                        </constraints>
+                                        <state key="normal" title="评论"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="l5D-28-2OM" firstAttribute="leading" secondItem="sDx-J5-WkK" secondAttribute="trailing" constant="17" id="699-v3-1qJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="sDx-J5-WkK" secondAttribute="bottom" constant="5" id="7f4-en-fGu"/>
                                     <constraint firstAttribute="bottom" secondItem="Mhn-W7-uT8" secondAttribute="bottom" constant="5" id="DKT-fg-Mg4"/>
                                     <constraint firstItem="Mhn-W7-uT8" firstAttribute="top" secondItem="F5L-RB-Gx5" secondAttribute="top" constant="5" id="EHq-3P-Y9m"/>
                                     <constraint firstAttribute="bottom" secondItem="l5D-28-2OM" secondAttribute="bottom" constant="5" id="EVp-zJ-Fqy"/>
@@ -750,29 +756,100 @@
                                     <constraint firstItem="Mhn-W7-uT8" firstAttribute="leading" secondItem="l5D-28-2OM" secondAttribute="trailing" constant="21" id="e6S-xA-2Bj"/>
                                     <constraint firstItem="l5D-28-2OM" firstAttribute="top" secondItem="F5L-RB-Gx5" secondAttribute="top" constant="5" id="fi0-0q-gY9"/>
                                     <constraint firstItem="n9j-0C-sdX" firstAttribute="top" secondItem="F5L-RB-Gx5" secondAttribute="top" constant="5" id="kBY-o4-M8C"/>
+                                    <constraint firstAttribute="height" constant="40" id="my6-HQ-UBs"/>
                                     <constraint firstAttribute="trailing" secondItem="Mhn-W7-uT8" secondAttribute="trailing" constant="8" id="u1R-hI-Orp"/>
                                 </constraints>
                             </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eOM-vf-rk4">
+                                <rect key="frame" x="0.0" y="64" width="375" height="563"/>
+                                <connections>
+                                    <segue destination="Qaz-uU-jJw" kind="embed" id="11i-IM-WxP"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="F5L-RB-Gx5" firstAttribute="top" secondItem="ffe-Wf-bma" secondAttribute="bottom" constant="2" id="4Xn-8D-ZWE"/>
                             <constraint firstAttribute="bottom" secondItem="F5L-RB-Gx5" secondAttribute="bottom" id="6Bw-d6-GEw"/>
-                            <constraint firstItem="F5L-RB-Gx5" firstAttribute="leading" secondItem="ffe-Wf-bma" secondAttribute="leading" id="DSs-Qz-GhJ"/>
-                            <constraint firstAttribute="trailing" secondItem="ffe-Wf-bma" secondAttribute="trailing" id="Gbd-7Q-mm4"/>
-                            <constraint firstItem="ffe-Wf-bma" firstAttribute="leading" secondItem="zOZ-KB-XdE" secondAttribute="leading" id="OvH-p5-WZi"/>
-                            <constraint firstItem="F5L-RB-Gx5" firstAttribute="trailing" secondItem="ffe-Wf-bma" secondAttribute="trailing" id="Rhb-96-dbv"/>
-                            <constraint firstItem="ffe-Wf-bma" firstAttribute="top" secondItem="G60-OJ-g2h" secondAttribute="bottom" id="U6e-ju-t0N"/>
-                            <constraint firstAttribute="bottom" secondItem="ffe-Wf-bma" secondAttribute="bottom" constant="42" id="iXP-Xe-7CZ"/>
+                            <constraint firstItem="F5L-RB-Gx5" firstAttribute="leading" secondItem="zOZ-KB-XdE" secondAttribute="leading" id="CUx-9c-r4P"/>
+                            <constraint firstItem="F5L-RB-Gx5" firstAttribute="top" secondItem="eOM-vf-rk4" secondAttribute="bottom" id="Ryf-sc-iLO"/>
+                            <constraint firstAttribute="trailing" secondItem="F5L-RB-Gx5" secondAttribute="trailing" id="TId-aA-yOu"/>
+                            <constraint firstItem="eOM-vf-rk4" firstAttribute="top" secondItem="G60-OJ-g2h" secondAttribute="bottom" id="kAX-js-S3P"/>
+                            <constraint firstAttribute="trailing" secondItem="eOM-vf-rk4" secondAttribute="trailing" id="lZU-h6-km7"/>
+                            <constraint firstItem="eOM-vf-rk4" firstAttribute="leading" secondItem="zOZ-KB-XdE" secondAttribute="leading" id="s6M-d0-8yc"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="PKg-nr-BbA">
                         <barButtonItem key="backBarButtonItem" title=" " id="NFA-MC-BcQ"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="btnCollect" destination="l5D-28-2OM" id="KrD-o5-AeW"/>
+                        <outlet property="btnComment" destination="n9j-0C-sdX" id="gaA-23-JSd"/>
+                        <outlet property="btnShare" destination="Mhn-W7-uT8" id="QJQ-ic-ZVD"/>
+                        <outlet property="btnShowComment" destination="sDx-J5-WkK" id="z85-0I-3U6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j3S-9L-tf4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2068" y="611.24437781109452"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="xfx-bJ-vxM">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Qaz-uU-jJw" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MIe-LL-CFk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2814" y="609"/>
+        </scene>
+        <!--Forum Detail View Controller-->
+        <scene sceneID="5IE-rD-YEk">
+            <objects>
+                <viewController storyboardIdentifier="ForumDetailView" id="X6K-Bp-IeA" customClass="ForumDetailViewController" customModule="_234567" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aUj-pX-T9Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="jom-QN-4bM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rcK-cF-KMI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bRz-8A-368">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99345737700000003" green="0.48564136029999999" blue="0.25763845439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bRz-8A-368" firstAttribute="leading" secondItem="rcK-cF-KMI" secondAttribute="leading" id="8Xz-rN-99r"/>
+                            <constraint firstAttribute="trailing" secondItem="bRz-8A-368" secondAttribute="trailing" id="QfU-1t-Wqr"/>
+                            <constraint firstItem="jom-QN-4bM" firstAttribute="top" secondItem="bRz-8A-368" secondAttribute="bottom" id="ekB-8f-pOh"/>
+                            <constraint firstItem="bRz-8A-368" firstAttribute="top" secondItem="rcK-cF-KMI" secondAttribute="top" id="ifh-KJ-Ae9"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xkK-83-uoP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3656.8000000000002" y="213.64317841079463"/>
+        </scene>
+        <!--Forum Comments View Controller-->
+        <scene sceneID="pUl-oa-8hu">
+            <objects>
+                <viewController storyboardIdentifier="ForumCommentsView" id="Aqo-gM-Lm3" customClass="ForumCommentsViewController" customModule="_234567" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="I6d-PN-lPG"/>
+                        <viewControllerLayoutGuide type="bottom" id="Nee-9v-1Qg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="49V-m9-Yby">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bPU-q8-cxX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3657" y="815"/>
         </scene>
         <!--发现-->
         <scene sceneID="5ZH-Cc-M4u">
@@ -1160,7 +1237,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XW9-0F-bck" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3168.8000000000002" y="1635.832083958021"/>
+            <point key="canvasLocation" x="2703" y="2076"/>
         </scene>
         <!--Product Info View Controller-->
         <scene sceneID="3a6-Jd-V2b">
@@ -1396,7 +1473,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zhX-S5-2ao" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3173.5999999999999" y="956.67166416791611"/>
+            <point key="canvasLocation" x="3233" y="1419"/>
         </scene>
         <!--Ask Table View Controller-->
         <scene sceneID="mOQ-Bm-FcK">
@@ -1530,7 +1607,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ynd-nh-WHM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4026" y="957"/>
+            <point key="canvasLocation" x="4038" y="1419"/>
         </scene>
         <!--我的-->
         <scene sceneID="iSx-2k-rEd">

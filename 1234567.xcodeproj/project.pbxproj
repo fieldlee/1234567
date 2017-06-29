@@ -25,6 +25,8 @@
 		E3C9F2101F04D833005BCB88 /* ProductInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C9F20F1F04D833005BCB88 /* ProductInfoView.swift */; };
 		E3C9F2121F04E8EC005BCB88 /* AskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C9F2111F04E8EC005BCB88 /* AskTableViewController.swift */; };
 		E3C9F2141F04F866005BCB88 /* ForumInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C9F2131F04F866005BCB88 /* ForumInfoViewController.swift */; };
+		E3C9F2161F0504FC005BCB88 /* ForumDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C9F2151F0504FC005BCB88 /* ForumDetailViewController.swift */; };
+		E3C9F2181F050512005BCB88 /* ForumCommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C9F2171F050512005BCB88 /* ForumCommentsViewController.swift */; };
 		E3E818B91EFCCE8C007ADD18 /* MineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E818B81EFCCE8C007ADD18 /* MineTableViewController.swift */; };
 		E3E818BD1EFCD05C007ADD18 /* JXButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E818BC1EFCD05C007ADD18 /* JXButton.m */; };
 		E3E818BF1EFCE611007ADD18 /* LanuchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E818BE1EFCE611007ADD18 /* LanuchViewController.swift */; };
@@ -60,6 +62,8 @@
 		E3C9F20F1F04D833005BCB88 /* ProductInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductInfoView.swift; path = customView/ProductInfoView.swift; sourceTree = "<group>"; };
 		E3C9F2111F04E8EC005BCB88 /* AskTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AskTableViewController.swift; path = find/AskTableViewController.swift; sourceTree = "<group>"; };
 		E3C9F2131F04F866005BCB88 /* ForumInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForumInfoViewController.swift; path = forum/ForumInfoViewController.swift; sourceTree = "<group>"; };
+		E3C9F2151F0504FC005BCB88 /* ForumDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForumDetailViewController.swift; path = forum/ForumDetailViewController.swift; sourceTree = "<group>"; };
+		E3C9F2171F050512005BCB88 /* ForumCommentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForumCommentsViewController.swift; path = forum/ForumCommentsViewController.swift; sourceTree = "<group>"; };
 		E3E818B81EFCCE8C007ADD18 /* MineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MineTableViewController.swift; path = mine/MineTableViewController.swift; sourceTree = "<group>"; };
 		E3E818BB1EFCD05C007ADD18 /* JXButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXButton.h; sourceTree = "<group>"; };
 		E3E818BC1EFCD05C007ADD18 /* JXButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXButton.m; sourceTree = "<group>"; };
@@ -178,6 +182,8 @@
 			children = (
 				E3B810621EFB4F9D00A4BF38 /* ForumTableViewController.swift */,
 				E3C9F2131F04F866005BCB88 /* ForumInfoViewController.swift */,
+				E3C9F2151F0504FC005BCB88 /* ForumDetailViewController.swift */,
+				E3C9F2171F050512005BCB88 /* ForumCommentsViewController.swift */,
 			);
 			name = forum;
 			sourceTree = "<group>";
@@ -360,6 +366,7 @@
 				E3E818C71EFE0918007ADD18 /* HotCollectionViewCell.swift in Sources */,
 				E3E818CE1EFE183D007ADD18 /* ImpressView.swift in Sources */,
 				E3E818C91EFE09EF007ADD18 /* ColorUtility.swift in Sources */,
+				E3C9F2181F050512005BCB88 /* ForumCommentsViewController.swift in Sources */,
 				E3C9F2141F04F866005BCB88 /* ForumInfoViewController.swift in Sources */,
 				E3B810631EFB4F9D00A4BF38 /* ForumTableViewController.swift in Sources */,
 				E3E818B91EFCCE8C007ADD18 /* MineTableViewController.swift in Sources */,
@@ -374,6 +381,7 @@
 				E3B810581EFB4A2300A4BF38 /* ReTabBarController.swift in Sources */,
 				E3C9F2101F04D833005BCB88 /* ProductInfoView.swift in Sources */,
 				E3E818CB1EFE12B8007ADD18 /* ProductInfoViewController.swift in Sources */,
+				E3C9F2161F0504FC005BCB88 /* ForumDetailViewController.swift in Sources */,
 				E3E818C11EFD17BE007ADD18 /* BrandTableViewController.swift in Sources */,
 				E3B810511EFB488800A4BF38 /* WebViewController.swift in Sources */,
 				E3E818BF1EFCE611007ADD18 /* LanuchViewController.swift in Sources */,
