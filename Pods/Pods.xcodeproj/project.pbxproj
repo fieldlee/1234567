@@ -7,79 +7,145 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		59D7944AA871F074ADC9F35E63D90E99 /* Pods-1234567-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A12EE618AB72AC88E5B5E8EED93B77 /* Pods-1234567-dummy.m */; };
-		683569F79A8D12C36AD1C6958DC35BEC /* SMIconLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC461EA44068F2E7A9987697F71DE1CE /* SMIconLabel-dummy.m */; };
-		6D008CC70F36AFCF2F0CF8881F75EA71 /* Pods-1234567-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 501A73CDE67AB226A55C27088BAF8EAD /* Pods-1234567-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		73E11F9E1E78831027E393B2CC30CE49 /* SMIconLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D4E5EC762C722B76FC5082740D597BF /* SMIconLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		88FE003603A11D31C572559BD0470B0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
-		B908E180972F1BF656DB602BD4B49B3A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
-		ECD36C366348EA8D8733BF9D9C404F74 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
-		F04C22D1C3F4159F52A9373E581F027D /* SMIconLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D8AFFB86548A1169A267D7443B999 /* SMIconLabel.swift */; };
+		2B4D1FA9A9A585B6A2E496A2B87AA7C2 /* MIBadgeButton-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8520C02070767C33AB5008D417DDC4 /* MIBadgeButton-Swift-dummy.m */; };
+		346BDA8B7143BFA20B2F20E2F688D6BE /* SMIconLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D82535EEB94B3819402385C93F555E3 /* SMIconLabel-dummy.m */; };
+		4F867CF9DCD374365461E47C00D74E0D /* SMIconLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CD8C5A9EDF8719CBD604E07C14B0A0 /* SMIconLabel.swift */; };
+		580122E659B5FE4FDA4417C7A76CA5BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		5832E3A1699CAEC0351ADC39D472C2C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		6C07AF45D135A17B2907A3928DB34F1B /* Pods-1234567-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A12EE618AB72AC88E5B5E8EED93B77 /* Pods-1234567-dummy.m */; };
+		79699A84A4FD5DFFEE9C0F43B1BD2A15 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
+		8532DD7100A151F2FB68E3202B0787C3 /* Pods-1234567-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 501A73CDE67AB226A55C27088BAF8EAD /* Pods-1234567-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FDD351C54B1F69B30DA69598B20E848 /* MIBadgeButton-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CCDE2847F83950F571473007BBA3A49 /* MIBadgeButton-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6BCC3FFF1465A36C84595E179DCD457 /* MIBadgeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304031B8F0091C91D9EE0960BEA956C9 /* MIBadgeButton.swift */; };
+		CE042FBE46420EE332BAAD1DDCC39620 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		D8974F89B520829307D5DFA14AC4504A /* SMIconLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B0D3649E39AAEB81AC5566A16DFFF707 /* SMIconLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		ECBD3C4337524495E75694FFBDD724FE /* PBXContainerItemProxy */ = {
+		D4AE7C8058F368622F34BFC63E95DED8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DA1B349D7050A6B49C9BC1DC6A08E24F;
+			remoteGlobalIDString = 025E362171C9D4C8F41821408E06EF39;
 			remoteInfo = SMIconLabel;
+		};
+		ECBA1C0F2B2CDDE42A1870719758FA15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34E1BEE5B9151B6FF42B51C88D1AF746;
+			remoteInfo = "MIBadgeButton-Swift";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		010EC0D2DB32F8E1F13F3049F4D328AB /* Pods-1234567-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-1234567-acknowledgements.markdown"; sourceTree = "<group>"; };
 		06331BD46FE3553BD12B694B2A710CF6 /* Pods-1234567.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-1234567.modulemap"; sourceTree = "<group>"; };
+		1602585134F591BD7010494AAAADF6FE /* Pods_1234567.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_1234567.framework; path = "Pods-1234567.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2460168FD5347CF8F0BD1058205AD6E9 /* SMIconLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SMIconLabel.modulemap; sourceTree = "<group>"; };
 		2573E29CA43C5F8D39708357BA3A3F52 /* Pods-1234567.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-1234567.release.xcconfig"; sourceTree = "<group>"; };
+		29CD8C5A9EDF8719CBD604E07C14B0A0 /* SMIconLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SMIconLabel.swift; path = SMIconLabel/SMIconLabel.swift; sourceTree = "<group>"; };
 		2EB0E365109268A6AEBCE44348EFA4D3 /* Pods-1234567.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-1234567.debug.xcconfig"; sourceTree = "<group>"; };
+		304031B8F0091C91D9EE0960BEA956C9 /* MIBadgeButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MIBadgeButton.swift; path = Classes/MIBadgeButton.swift; sourceTree = "<group>"; };
+		3368DD0B00E25994A98ACCB8409C0083 /* MIBadgeButton-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MIBadgeButton-Swift-prefix.pch"; sourceTree = "<group>"; };
+		3BA28C607B7D7B2964DFBE17373DA549 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43A12EE618AB72AC88E5B5E8EED93B77 /* Pods-1234567-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-1234567-dummy.m"; sourceTree = "<group>"; };
-		4A7D54F3B0137F24346BF1D683BDDFCF /* Pods_1234567.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_1234567.framework; path = "Pods-1234567.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		501A73CDE67AB226A55C27088BAF8EAD /* Pods-1234567-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-1234567-umbrella.h"; sourceTree = "<group>"; };
-		600D243AD2341D921ACE1AEDCC38B405 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		546DCE4A1C6330077D328DCF92C3E75E /* SMIconLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SMIconLabel-prefix.pch"; sourceTree = "<group>"; };
+		5CCDE2847F83950F571473007BBA3A49 /* MIBadgeButton-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MIBadgeButton-Swift-umbrella.h"; sourceTree = "<group>"; };
+		5D82535EEB94B3819402385C93F555E3 /* SMIconLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SMIconLabel-dummy.m"; sourceTree = "<group>"; };
+		5F1D9E8E45918BE61F5B46C89EC55BBB /* SMIconLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SMIconLabel.framework; path = SMIconLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7B3CC8B745A9B585A0C459609EC2B6DC /* SMIconLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SMIconLabel-prefix.pch"; sourceTree = "<group>"; };
+		6E25B58886906BB1D9990401B79D7EF5 /* SMIconLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SMIconLabel.xcconfig; sourceTree = "<group>"; };
+		73C3F878B84A1B32A128393F848DC838 /* MIBadgeButton-Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MIBadgeButton-Swift.xcconfig"; sourceTree = "<group>"; };
 		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		9312A476AF6DC76BCA23ED0C53B76F89 /* MIBadgeButton_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MIBadgeButton_Swift.framework; path = "MIBadgeButton-Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		97BEAC0D91E0B239E48D08139ECCAB17 /* SMIconLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SMIconLabel.xcconfig; sourceTree = "<group>"; };
-		9D4E5EC762C722B76FC5082740D597BF /* SMIconLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SMIconLabel-umbrella.h"; sourceTree = "<group>"; };
+		9D8520C02070767C33AB5008D417DDC4 /* MIBadgeButton-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MIBadgeButton-Swift-dummy.m"; sourceTree = "<group>"; };
+		B0D3649E39AAEB81AC5566A16DFFF707 /* SMIconLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SMIconLabel-umbrella.h"; sourceTree = "<group>"; };
+		B0EAC4BAEC555F13E093FFB9774F8955 /* MIBadgeButton-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "MIBadgeButton-Swift.modulemap"; sourceTree = "<group>"; };
 		B37D671293C0204315384F192CD48FA0 /* Pods-1234567-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-1234567-frameworks.sh"; sourceTree = "<group>"; };
-		B49D8AFFB86548A1169A267D7443B999 /* SMIconLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SMIconLabel.swift; path = SMIconLabel/SMIconLabel.swift; sourceTree = "<group>"; };
-		C877F2ADD953DAF18E533671F676FBAE /* SMIconLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SMIconLabel.modulemap; sourceTree = "<group>"; };
 		D090BDBED1C4E3667A4AACB6545A4977 /* Pods-1234567-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-1234567-resources.sh"; sourceTree = "<group>"; };
-		E747248DE4672DB8902D8F1816A19523 /* SMIconLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SMIconLabel.framework; path = SMIconLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB4C177A7FCEB8D45BA2606200312D62 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA017BDE31C4ECC577BFD843F33A5E38 /* Pods-1234567-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-1234567-acknowledgements.plist"; sourceTree = "<group>"; };
 		F705DAB3408FED869032B78C7D1234CD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FC461EA44068F2E7A9987697F71DE1CE /* SMIconLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SMIconLabel-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		48BC0B7D6C319CE0DC7ED77FCFE2FB1E /* Frameworks */ = {
+		9C19A10FE5766CF21DA43E2F5C493BD4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88FE003603A11D31C572559BD0470B0A /* Foundation.framework in Frameworks */,
-				B908E180972F1BF656DB602BD4B49B3A /* UIKit.framework in Frameworks */,
+				580122E659B5FE4FDA4417C7A76CA5BD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9530A8805868F03E0A487411CD962C8C /* Frameworks */ = {
+		A3180CD276157BC65600D8B9DF586581 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECD36C366348EA8D8733BF9D9C404F74 /* Foundation.framework in Frameworks */,
+				5832E3A1699CAEC0351ADC39D472C2C7 /* Foundation.framework in Frameworks */,
+				79699A84A4FD5DFFEE9C0F43B1BD2A15 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDEE08711DCC695660DE63B66C8B970F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE042FBE46420EE332BAAD1DDCC39620 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		39EEAC54B23938D1846E35332F66A257 /* Products */ = {
+		1684B1A2D8250ACBE28BE5FCF437AFA6 /* MIBadgeButton-Swift */ = {
 			isa = PBXGroup;
 			children = (
-				4A7D54F3B0137F24346BF1D683BDDFCF /* Pods_1234567.framework */,
-				E747248DE4672DB8902D8F1816A19523 /* SMIconLabel.framework */,
+				304031B8F0091C91D9EE0960BEA956C9 /* MIBadgeButton.swift */,
+				23CCE7E0B05E77B63FFBC95201D2F38A /* Support Files */,
 			);
-			name = Products;
+			name = "MIBadgeButton-Swift";
+			path = "MIBadgeButton-Swift";
+			sourceTree = "<group>";
+		};
+		23CCE7E0B05E77B63FFBC95201D2F38A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB4C177A7FCEB8D45BA2606200312D62 /* Info.plist */,
+				B0EAC4BAEC555F13E093FFB9774F8955 /* MIBadgeButton-Swift.modulemap */,
+				73C3F878B84A1B32A128393F848DC838 /* MIBadgeButton-Swift.xcconfig */,
+				9D8520C02070767C33AB5008D417DDC4 /* MIBadgeButton-Swift-dummy.m */,
+				3368DD0B00E25994A98ACCB8409C0083 /* MIBadgeButton-Swift-prefix.pch */,
+				5CCDE2847F83950F571473007BBA3A49 /* MIBadgeButton-Swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MIBadgeButton-Swift";
+			sourceTree = "<group>";
+		};
+		273AFE46DFA67C30BA3474DEF8B1E0CE /* SMIconLabel */ = {
+			isa = PBXGroup;
+			children = (
+				29CD8C5A9EDF8719CBD604E07C14B0A0 /* SMIconLabel.swift */,
+				33CF3B3A2324FDD0BCE00B9A3AA30D96 /* Support Files */,
+			);
+			name = SMIconLabel;
+			path = SMIconLabel;
+			sourceTree = "<group>";
+		};
+		33CF3B3A2324FDD0BCE00B9A3AA30D96 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3BA28C607B7D7B2964DFBE17373DA549 /* Info.plist */,
+				2460168FD5347CF8F0BD1058205AD6E9 /* SMIconLabel.modulemap */,
+				6E25B58886906BB1D9990401B79D7EF5 /* SMIconLabel.xcconfig */,
+				5D82535EEB94B3819402385C93F555E3 /* SMIconLabel-dummy.m */,
+				546DCE4A1C6330077D328DCF92C3E75E /* SMIconLabel-prefix.pch */,
+				B0D3649E39AAEB81AC5566A16DFFF707 /* SMIconLabel-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SMIconLabel";
 			sourceTree = "<group>";
 		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
@@ -90,26 +156,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		61D59D18DE0BC4AD052584B4F5A5A466 /* Support Files */ = {
+		4494D85F45832EFC03C191F7697EEABF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				600D243AD2341D921ACE1AEDCC38B405 /* Info.plist */,
-				C877F2ADD953DAF18E533671F676FBAE /* SMIconLabel.modulemap */,
-				97BEAC0D91E0B239E48D08139ECCAB17 /* SMIconLabel.xcconfig */,
-				FC461EA44068F2E7A9987697F71DE1CE /* SMIconLabel-dummy.m */,
-				7B3CC8B745A9B585A0C459609EC2B6DC /* SMIconLabel-prefix.pch */,
-				9D4E5EC762C722B76FC5082740D597BF /* SMIconLabel-umbrella.h */,
+				9312A476AF6DC76BCA23ED0C53B76F89 /* MIBadgeButton_Swift.framework */,
+				1602585134F591BD7010494AAAADF6FE /* Pods_1234567.framework */,
+				5F1D9E8E45918BE61F5B46C89EC55BBB /* SMIconLabel.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SMIconLabel";
-			sourceTree = "<group>";
-		};
-		6951DA25CFFC6DCBA4BFCAB917AD0595 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C7ABC0C40743254470D09BFBB60C9F3A /* SMIconLabel */,
-			);
-			name = Pods;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -117,10 +171,19 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				6951DA25CFFC6DCBA4BFCAB917AD0595 /* Pods */,
-				39EEAC54B23938D1846E35332F66A257 /* Products */,
+				8B118F9C28548D5354DC628D8B8FFE0C /* Pods */,
+				4494D85F45832EFC03C191F7697EEABF /* Products */,
 				D092D2EAB893C3F409FF88D0C37994EC /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		8B118F9C28548D5354DC628D8B8FFE0C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1684B1A2D8250ACBE28BE5FCF437AFA6 /* MIBadgeButton-Swift */,
+				273AFE46DFA67C30BA3474DEF8B1E0CE /* SMIconLabel */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		97FB9E2DED53C7E4406D36EC4EA460DE /* Pods-1234567 */ = {
@@ -139,16 +202,6 @@
 			);
 			name = "Pods-1234567";
 			path = "Target Support Files/Pods-1234567";
-			sourceTree = "<group>";
-		};
-		C7ABC0C40743254470D09BFBB60C9F3A /* SMIconLabel */ = {
-			isa = PBXGroup;
-			children = (
-				B49D8AFFB86548A1169A267D7443B999 /* SMIconLabel.swift */,
-				61D59D18DE0BC4AD052584B4F5A5A466 /* Support Files */,
-			);
-			name = SMIconLabel;
-			path = SMIconLabel;
 			sourceTree = "<group>";
 		};
 		D092D2EAB893C3F409FF88D0C37994EC /* Targets Support Files */ = {
@@ -171,32 +224,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		43E67388872E64D46539777C326DC4E2 /* Headers */ = {
+		3F62CB957060852D9EE3EB55135C07FA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73E11F9E1E78831027E393B2CC30CE49 /* SMIconLabel-umbrella.h in Headers */,
+				D8974F89B520829307D5DFA14AC4504A /* SMIconLabel-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		559340E76E614C7C94944F66BDB951D1 /* Headers */ = {
+		E986B947AD49181F45FE43552984B4B2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D008CC70F36AFCF2F0CF8881F75EA71 /* Pods-1234567-umbrella.h in Headers */,
+				8532DD7100A151F2FB68E3202B0787C3 /* Pods-1234567-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE174E091A02FFCD7AC614739431E492 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FDD351C54B1F69B30DA69598B20E848 /* MIBadgeButton-Swift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		DA1B349D7050A6B49C9BC1DC6A08E24F /* SMIconLabel */ = {
+		025E362171C9D4C8F41821408E06EF39 /* SMIconLabel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9A70014E3D3C15AD0D935DAD64451977 /* Build configuration list for PBXNativeTarget "SMIconLabel" */;
+			buildConfigurationList = 2982B65089AD37FC7ABC580AD504CDB8 /* Build configuration list for PBXNativeTarget "SMIconLabel" */;
 			buildPhases = (
-				7985D22AA008BEFB396A9453CEFD56DC /* Sources */,
-				48BC0B7D6C319CE0DC7ED77FCFE2FB1E /* Frameworks */,
-				43E67388872E64D46539777C326DC4E2 /* Headers */,
+				063306665F2E7ED6F415E169C580B5AA /* Sources */,
+				A3180CD276157BC65600D8B9DF586581 /* Frameworks */,
+				3F62CB957060852D9EE3EB55135C07FA /* Headers */,
 			);
 			buildRules = (
 			);
@@ -204,25 +265,43 @@
 			);
 			name = SMIconLabel;
 			productName = SMIconLabel;
-			productReference = E747248DE4672DB8902D8F1816A19523 /* SMIconLabel.framework */;
+			productReference = 5F1D9E8E45918BE61F5B46C89EC55BBB /* SMIconLabel.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		DECDE96CA639D889E888F95840B4C758 /* Pods-1234567 */ = {
+		34E1BEE5B9151B6FF42B51C88D1AF746 /* MIBadgeButton-Swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5207F9B139958336920E208C52E03BDB /* Build configuration list for PBXNativeTarget "Pods-1234567" */;
+			buildConfigurationList = CFE7695F5B026F06CD316C4E5924453D /* Build configuration list for PBXNativeTarget "MIBadgeButton-Swift" */;
 			buildPhases = (
-				F2FFE115B954DCF609D3157C13A9E1B1 /* Sources */,
-				9530A8805868F03E0A487411CD962C8C /* Frameworks */,
-				559340E76E614C7C94944F66BDB951D1 /* Headers */,
+				DE71D7545C915DC1103E43EE6C34774F /* Sources */,
+				BDEE08711DCC695660DE63B66C8B970F /* Frameworks */,
+				FE174E091A02FFCD7AC614739431E492 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D9D414A276328A109509A4FCB987C18B /* PBXTargetDependency */,
+			);
+			name = "MIBadgeButton-Swift";
+			productName = "MIBadgeButton-Swift";
+			productReference = 9312A476AF6DC76BCA23ED0C53B76F89 /* MIBadgeButton_Swift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		51640489759BE845F911A861DD0F9FAE /* Pods-1234567 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B0A9F9979793EB3D2E891FD6896DCC8 /* Build configuration list for PBXNativeTarget "Pods-1234567" */;
+			buildPhases = (
+				F63A2BB35908E30954DDFE6FF6F3B42B /* Sources */,
+				9C19A10FE5766CF21DA43E2F5C493BD4 /* Frameworks */,
+				E986B947AD49181F45FE43552984B4B2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6C79CC02638A5E8592F3AFB0B14CE2B /* PBXTargetDependency */,
+				A093371512623DEA69EC7FB05E6725C9 /* PBXTargetDependency */,
 			);
 			name = "Pods-1234567";
 			productName = "Pods-1234567";
-			productReference = 4A7D54F3B0137F24346BF1D683BDDFCF /* Pods_1234567.framework */;
+			productReference = 1602585134F591BD7010494AAAADF6FE /* Pods_1234567.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -242,42 +321,58 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 39EEAC54B23938D1846E35332F66A257 /* Products */;
+			productRefGroup = 4494D85F45832EFC03C191F7697EEABF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DECDE96CA639D889E888F95840B4C758 /* Pods-1234567 */,
-				DA1B349D7050A6B49C9BC1DC6A08E24F /* SMIconLabel */,
+				34E1BEE5B9151B6FF42B51C88D1AF746 /* MIBadgeButton-Swift */,
+				51640489759BE845F911A861DD0F9FAE /* Pods-1234567 */,
+				025E362171C9D4C8F41821408E06EF39 /* SMIconLabel */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7985D22AA008BEFB396A9453CEFD56DC /* Sources */ = {
+		063306665F2E7ED6F415E169C580B5AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				683569F79A8D12C36AD1C6958DC35BEC /* SMIconLabel-dummy.m in Sources */,
-				F04C22D1C3F4159F52A9373E581F027D /* SMIconLabel.swift in Sources */,
+				346BDA8B7143BFA20B2F20E2F688D6BE /* SMIconLabel-dummy.m in Sources */,
+				4F867CF9DCD374365461E47C00D74E0D /* SMIconLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F2FFE115B954DCF609D3157C13A9E1B1 /* Sources */ = {
+		DE71D7545C915DC1103E43EE6C34774F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59D7944AA871F074ADC9F35E63D90E99 /* Pods-1234567-dummy.m in Sources */,
+				2B4D1FA9A9A585B6A2E496A2B87AA7C2 /* MIBadgeButton-Swift-dummy.m in Sources */,
+				A6BCC3FFF1465A36C84595E179DCD457 /* MIBadgeButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F63A2BB35908E30954DDFE6FF6F3B42B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C07AF45D135A17B2907A3928DB34F1B /* Pods-1234567-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D9D414A276328A109509A4FCB987C18B /* PBXTargetDependency */ = {
+		A093371512623DEA69EC7FB05E6725C9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SMIconLabel;
-			target = DA1B349D7050A6B49C9BC1DC6A08E24F /* SMIconLabel */;
-			targetProxy = ECBD3C4337524495E75694FFBDD724FE /* PBXContainerItemProxy */;
+			target = 025E362171C9D4C8F41821408E06EF39 /* SMIconLabel */;
+			targetProxy = D4AE7C8058F368622F34BFC63E95DED8 /* PBXContainerItemProxy */;
+		};
+		C6C79CC02638A5E8592F3AFB0B14CE2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "MIBadgeButton-Swift";
+			target = 34E1BEE5B9151B6FF42B51C88D1AF746 /* MIBadgeButton-Swift */;
+			targetProxy = ECBA1C0F2B2CDDE42A1870719758FA15 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -326,41 +421,9 @@
 			};
 			name = Debug;
 		};
-		4335E2B7D0DA36143243EF9689235A7B /* Release */ = {
+		1B5E9A999788CC3243BDFA367944AF39 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 97BEAC0D91E0B239E48D08139ECCAB17 /* SMIconLabel.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SMIconLabel/SMIconLabel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SMIconLabel/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SMIconLabel/SMIconLabel.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SMIconLabel;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4480F9C0CC24D4505EF7B7DD483FC771 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 97BEAC0D91E0B239E48D08139ECCAB17 /* SMIconLabel.xcconfig */;
+			baseConfigurationReference = 6E25B58886906BB1D9990401B79D7EF5 /* SMIconLabel.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -431,7 +494,71 @@
 			};
 			name = Release;
 		};
-		CFB4E873C4A6DC4DF87261FFA98A8CA9 /* Debug */ = {
+		5334256CAC84E7640F8AF50B729492F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E25B58886906BB1D9990401B79D7EF5 /* SMIconLabel.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SMIconLabel/SMIconLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SMIconLabel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SMIconLabel/SMIconLabel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SMIconLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7BB0B72458F72F6579AC251C876C3217 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73C3F878B84A1B32A128393F848DC838 /* MIBadgeButton-Swift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MIBadgeButton-Swift/MIBadgeButton-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MIBadgeButton-Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MIBadgeButton-Swift/MIBadgeButton-Swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MIBadgeButton_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CA2F5A248C7315016D2A105312964989 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2EB0E365109268A6AEBCE44348EFA4D3 /* Pods-1234567.debug.xcconfig */;
 			buildSettings = {
@@ -467,7 +594,40 @@
 			};
 			name = Debug;
 		};
-		DC04D303ADC0CCC055FCF58A6E9AD4F6 /* Release */ = {
+		CB98FC4058972238AFDC99406CE027DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73C3F878B84A1B32A128393F848DC838 /* MIBadgeButton-Swift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MIBadgeButton-Swift/MIBadgeButton-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MIBadgeButton-Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MIBadgeButton-Swift/MIBadgeButton-Swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MIBadgeButton_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FBC1F9FAB5F4564617576BB6EDC77C67 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2573E29CA43C5F8D39708357BA3A3F52 /* Pods-1234567.release.xcconfig */;
 			buildSettings = {
@@ -505,6 +665,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2982B65089AD37FC7ABC580AD504CDB8 /* Build configuration list for PBXNativeTarget "SMIconLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B5E9A999788CC3243BDFA367944AF39 /* Debug */,
+				5334256CAC84E7640F8AF50B729492F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -514,20 +683,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5207F9B139958336920E208C52E03BDB /* Build configuration list for PBXNativeTarget "Pods-1234567" */ = {
+		9B0A9F9979793EB3D2E891FD6896DCC8 /* Build configuration list for PBXNativeTarget "Pods-1234567" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CFB4E873C4A6DC4DF87261FFA98A8CA9 /* Debug */,
-				DC04D303ADC0CCC055FCF58A6E9AD4F6 /* Release */,
+				CA2F5A248C7315016D2A105312964989 /* Debug */,
+				FBC1F9FAB5F4564617576BB6EDC77C67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9A70014E3D3C15AD0D935DAD64451977 /* Build configuration list for PBXNativeTarget "SMIconLabel" */ = {
+		CFE7695F5B026F06CD316C4E5924453D /* Build configuration list for PBXNativeTarget "MIBadgeButton-Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4480F9C0CC24D4505EF7B7DD483FC771 /* Debug */,
-				4335E2B7D0DA36143243EF9689235A7B /* Release */,
+				CB98FC4058972238AFDC99406CE027DE /* Debug */,
+				7BB0B72458F72F6579AC251C876C3217 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

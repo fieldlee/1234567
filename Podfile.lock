@@ -1,12 +1,25 @@
 PODS:
+  - MIBadgeButton-Swift (0.5)
   - SMIconLabel (0.4.0)
 
 DEPENDENCIES:
+  - MIBadgeButton-Swift (from `https://github.com/mustafaibrahim989/MIBadgeButton-Swift.git`, branch `master`)
   - SMIconLabel
 
+EXTERNAL SOURCES:
+  MIBadgeButton-Swift:
+    :branch: master
+    :git: https://github.com/mustafaibrahim989/MIBadgeButton-Swift.git
+
+CHECKOUT OPTIONS:
+  MIBadgeButton-Swift:
+    :commit: 3c2638d2e6e46ec2e6dd978d8ada8863df3df5e6
+    :git: https://github.com/mustafaibrahim989/MIBadgeButton-Swift.git
+
 SPEC CHECKSUMS:
+  MIBadgeButton-Swift: 9e57309b00b168d75ca8fecb45bc75124a8ffddf
   SMIconLabel: a30e4316fb3d7808549005faa6a6798c06c2eeba
 
-PODFILE CHECKSUM: 7bfac77d39eb81f6e35273982d236a70a1790a77
+PODFILE CHECKSUM: 14bd9175ae5f5f159fb147334c8da1dd95df3360
 
 COCOAPODS: 1.1.1

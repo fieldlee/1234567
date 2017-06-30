@@ -39,7 +39,14 @@ class ForumInfoViewController: UIViewController {
     }
     
     @IBAction func comment(_ sender: Any) {
+        let wechatimage = UIImage(named: "wechat")
+        let weiboimage = UIImage(named: "weibo")
+        let twitterimage = UIImage(named: "twitter")
+        let imagesList = [wechatimage,weiboimage,twitterimage]
         
+        SGActionView.showGridMenu(withTitle: "share", itemTitles: ["微信","微博","Twitter"], images: imagesList) { (selectInt) in
+            print(selectInt)
+        }
     }
 
     /*

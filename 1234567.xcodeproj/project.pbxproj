@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		BEC01E96820CC7FFEF5FB52C /* Pods_1234567.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA98AED9F43B8BAC1FDF7EA /* Pods_1234567.framework */; };
+		E3068B9D1F064CCB0037859A /* SGActionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3068B941F064CCB0037859A /* SGActionView.m */; };
+		E3068B9E1F064CCB0037859A /* SGAlertMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = E3068B961F064CCB0037859A /* SGAlertMenu.m */; };
+		E3068B9F1F064CCB0037859A /* SGBaseMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = E3068B981F064CCB0037859A /* SGBaseMenu.m */; };
+		E3068BA01F064CCB0037859A /* SGGridMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = E3068B9A1F064CCB0037859A /* SGGridMenu.m */; };
+		E3068BA11F064CCB0037859A /* SGSheetMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = E3068B9C1F064CCB0037859A /* SGSheetMenu.m */; };
 		E3B8103B1EF9FB3400A4BF38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B8103A1EF9FB3400A4BF38 /* AppDelegate.swift */; };
 		E3B8103D1EF9FB3400A4BF38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B8103C1EF9FB3400A4BF38 /* ViewController.swift */; };
 		E3B810401EF9FB3400A4BF38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3B8103E1EF9FB3400A4BF38 /* Main.storyboard */; };
@@ -42,6 +47,16 @@
 /* Begin PBXFileReference section */
 		7C876739C34028D4471ACFEB /* Pods-1234567.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-1234567.release.xcconfig"; path = "Pods/Target Support Files/Pods-1234567/Pods-1234567.release.xcconfig"; sourceTree = "<group>"; };
 		DEA98AED9F43B8BAC1FDF7EA /* Pods_1234567.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_1234567.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3068B931F064CCB0037859A /* SGActionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGActionView.h; sourceTree = "<group>"; };
+		E3068B941F064CCB0037859A /* SGActionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGActionView.m; sourceTree = "<group>"; };
+		E3068B951F064CCB0037859A /* SGAlertMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGAlertMenu.h; sourceTree = "<group>"; };
+		E3068B961F064CCB0037859A /* SGAlertMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGAlertMenu.m; sourceTree = "<group>"; };
+		E3068B971F064CCB0037859A /* SGBaseMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGBaseMenu.h; sourceTree = "<group>"; };
+		E3068B981F064CCB0037859A /* SGBaseMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGBaseMenu.m; sourceTree = "<group>"; };
+		E3068B991F064CCB0037859A /* SGGridMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGGridMenu.h; sourceTree = "<group>"; };
+		E3068B9A1F064CCB0037859A /* SGGridMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGGridMenu.m; sourceTree = "<group>"; };
+		E3068B9B1F064CCB0037859A /* SGSheetMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGSheetMenu.h; sourceTree = "<group>"; };
+		E3068B9C1F064CCB0037859A /* SGSheetMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGSheetMenu.m; sourceTree = "<group>"; };
 		E3B810371EF9FB3400A4BF38 /* 1234567.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 1234567.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3B8103A1EF9FB3400A4BF38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3B8103C1EF9FB3400A4BF38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +120,24 @@
 				DEA98AED9F43B8BAC1FDF7EA /* Pods_1234567.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E3068B921F064CCB0037859A /* SGActionView */ = {
+			isa = PBXGroup;
+			children = (
+				E3068B931F064CCB0037859A /* SGActionView.h */,
+				E3068B941F064CCB0037859A /* SGActionView.m */,
+				E3068B951F064CCB0037859A /* SGAlertMenu.h */,
+				E3068B961F064CCB0037859A /* SGAlertMenu.m */,
+				E3068B971F064CCB0037859A /* SGBaseMenu.h */,
+				E3068B981F064CCB0037859A /* SGBaseMenu.m */,
+				E3068B991F064CCB0037859A /* SGGridMenu.h */,
+				E3068B9A1F064CCB0037859A /* SGGridMenu.m */,
+				E3068B9B1F064CCB0037859A /* SGSheetMenu.h */,
+				E3068B9C1F064CCB0037859A /* SGSheetMenu.m */,
+			);
+			name = SGActionView;
+			path = customView/SGActionView;
 			sourceTree = "<group>";
 		};
 		E3B8102E1EF9FB3400A4BF38 = {
@@ -230,6 +263,7 @@
 		E3E818CC1EFE17F4007ADD18 /* customView */ = {
 			isa = PBXGroup;
 			children = (
+				E3068B921F064CCB0037859A /* SGActionView */,
 				E3E818CD1EFE183D007ADD18 /* ImpressView.swift */,
 				E3C9F20D1F04AD06005BCB88 /* ProductNavigationBar.swift */,
 				E3C9F20F1F04D833005BCB88 /* ProductInfoView.swift */,
@@ -365,11 +399,14 @@
 				E3B810661EFB5F4100A4BF38 /* FindTableViewController.swift in Sources */,
 				E3E818C71EFE0918007ADD18 /* HotCollectionViewCell.swift in Sources */,
 				E3E818CE1EFE183D007ADD18 /* ImpressView.swift in Sources */,
+				E3068B9E1F064CCB0037859A /* SGAlertMenu.m in Sources */,
 				E3E818C91EFE09EF007ADD18 /* ColorUtility.swift in Sources */,
 				E3C9F2181F050512005BCB88 /* ForumCommentsViewController.swift in Sources */,
 				E3C9F2141F04F866005BCB88 /* ForumInfoViewController.swift in Sources */,
+				E3068B9F1F064CCB0037859A /* SGBaseMenu.m in Sources */,
 				E3B810631EFB4F9D00A4BF38 /* ForumTableViewController.swift in Sources */,
 				E3E818B91EFCCE8C007ADD18 /* MineTableViewController.swift in Sources */,
+				E3068BA01F064CCB0037859A /* SGGridMenu.m in Sources */,
 				E3B8103D1EF9FB3400A4BF38 /* ViewController.swift in Sources */,
 				E3B8104E1EF9FFE900A4BF38 /* homeViewController.swift in Sources */,
 				E3B8103B1EF9FB3400A4BF38 /* AppDelegate.swift in Sources */,
@@ -378,8 +415,10 @@
 				E3B810561EFB49D200A4BF38 /* Drop.swift in Sources */,
 				E3C9F20E1F04AD06005BCB88 /* ProductNavigationBar.swift in Sources */,
 				E3E818BD1EFCD05C007ADD18 /* JXButton.m in Sources */,
+				E3068B9D1F064CCB0037859A /* SGActionView.m in Sources */,
 				E3B810581EFB4A2300A4BF38 /* ReTabBarController.swift in Sources */,
 				E3C9F2101F04D833005BCB88 /* ProductInfoView.swift in Sources */,
+				E3068BA11F064CCB0037859A /* SGSheetMenu.m in Sources */,
 				E3E818CB1EFE12B8007ADD18 /* ProductInfoViewController.swift in Sources */,
 				E3C9F2161F0504FC005BCB88 /* ForumDetailViewController.swift in Sources */,
 				E3E818C11EFD17BE007ADD18 /* BrandTableViewController.swift in Sources */,

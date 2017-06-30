@@ -16,6 +16,7 @@ class FindTableViewController: UITableViewController {
     
     var masterProductsCollectionFlowLayout : UICollectionViewFlowLayout?
     var masterBrandCollectionFlowLayout : UICollectionViewFlowLayout?
+    let indexOfList = ["主","热","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -65,7 +66,7 @@ class FindTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 3
+        return indexOfList.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -78,7 +79,14 @@ class FindTableViewController: UITableViewController {
            return 5
         }
     }
-
+    
+    override func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+        return indexOfList
+    }
+    
+    override func tableView(_ tableView: UITableView, sectionForSectionIndexTitle title: String, at index: Int) -> Int {
+        return index
+    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell : UITableViewCell?
@@ -107,13 +115,19 @@ class FindTableViewController: UITableViewController {
         }
     }
 
-    override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         if section == 0 {
-            return 15.0
-        }else if section == 1 {
-            return 15.0
-        }else{
             return 0.0
+        }else{
+            return 15.0
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if section == 0 || section == 1 {
+            return nil
+        }else{
+            return indexOfList[section]
         }
     }
     

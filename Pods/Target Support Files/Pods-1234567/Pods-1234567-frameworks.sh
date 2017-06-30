@@ -84,8 +84,10 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/MIBadgeButton-Swift/MIBadgeButton_Swift.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SMIconLabel/SMIconLabel.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/MIBadgeButton-Swift/MIBadgeButton_Swift.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SMIconLabel/SMIconLabel.framework"
 fi

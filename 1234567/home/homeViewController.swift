@@ -43,7 +43,7 @@ class homeViewController: UIViewController {
         headCollectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: headCollectionIdentifier)
         headCollectionView?.backgroundColor = borderColor
         
-        let headControlFrame = CGRect(x: 80.0, y: 200.0 - 50.0, width: view.bounds.size.width - 160.0, height: 30.0)
+        let headControlFrame = CGRect(x: 80.0, y: 200.0 - 30.0, width: view.bounds.size.width - 160.0, height: 30.0)
         headControl = UIPageControl(frame: headControlFrame)
     }
 
@@ -113,6 +113,10 @@ extension homeViewController : UICollectionViewDelegate{
     
     func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
         scrollViewDidEndDecelerating(scrollView)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
     }
 }
 extension homeViewController : UICollectionViewDataSource{

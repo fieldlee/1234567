@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>MIBadgeButton-Swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-1234567.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>DA1B349D7050A6B49C9BC1DC6A08E24F</key>
+		<key>025E362171C9D4C8F41821408E06EF39</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DECDE96CA639D889E888F95840B4C758</key>
+		<key>34E1BEE5B9151B6FF42B51C88D1AF746</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>51640489759BE845F911A861DD0F9FAE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
